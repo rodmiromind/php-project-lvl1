@@ -1,0 +1,13 @@
+{
+    "name": "piston/php-project-lvl1",
+    "authors": [
+        {
+            "name": "notebook",
+            "email": "onetreearmy@gmail.com"
+        }
+    ],
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
+}
