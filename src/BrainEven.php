@@ -16,7 +16,7 @@ function run()
     for ($i = 0; $i != 3; $i++) {
         $number = getNumber();
         line("Question: {$number}");
-        $answer = \cli\prompt('Your answer');   
+        $answer = \cli\prompt('Your answer');
         $correctAnswer = findCorrectAnswer($number);
 
         if ($answer === $correctAnswer) {
