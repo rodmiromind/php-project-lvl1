@@ -34,10 +34,10 @@ function run()
         return array_merge($questions, $correctAnswers);
     }
 
-$gameRules = line('What is the result of the expression?');
-$questionsAndAnswers = getQuestionsAndAnswers();
-$questions = array_slice($questionsAndAnswers, 0, 3);
-$correctAnswers = array_slice($questionsAndAnswers, 3, 3);
+    $gameRules = line('What is the result of the expression?');
+    $questionsAndAnswers = getQuestionsAndAnswers();
+    $questions = array_slice($questionsAndAnswers, 0, 3);
+    $correctAnswers = array_slice($questionsAndAnswers, 3, 3);
 
-flow($gameRules, $questions, $correctAnswers);
+    flow($gameRules, $questions, $correctAnswers);
 }
