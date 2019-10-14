@@ -14,16 +14,18 @@
     },
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "scripts": {
-        "phpcs": "phpcs"
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf"
       },
     "autoload": {
         "files": [
-            "src/cli.php",
-            "src/BrainEven.php",
-            "src/BrainEvenFunc.php"
+            "src/flow.php",
+            "src/games/BrainEven.php",
+            "src/games/BrainCalc.php"
         ]
     }
 }
