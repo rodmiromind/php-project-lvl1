@@ -6,3 +6,6 @@ Install and start video for step 2
 
 Install and start video for step 4 (brain-even)
 [![asciicast](https://asciinema.org/a/evHttqdgBNwAjJiyKnUCotuHZ.png)](https://asciinema.org/a/evHttqdgBNwAjJiyKnUCotuHZ)
+
+Install and start video for step 5 (brain-calc)
+[![asciicast](https://asciinema.org/a/hvOQqJDrw2DLDvrplFYafpIGO.png)](https://asciinema.org/a/hvOQqJDrw2DLDvrplFYafpIGO)
