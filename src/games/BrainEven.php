@@ -13,7 +13,7 @@ function run()
         return random_int(1, 100);
     }
 
-    function findCorrectAnswe($question)
+    function findCorrectAnswer($question)
     {
         return $question % 2 === 0 ? 'yes' : 'no';
     }

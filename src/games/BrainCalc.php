@@ -32,7 +32,7 @@ function run()
     }
 
     for ($i = 0; $i < 3; $i++) {
-        $questionsAndAnswer = getQuestionsAndAnswers();
+        $questionAndAnswer = getQuestionsAndAnswers();
         $questions[] = $questionAndAnswer[0];
         $correctAnswers[] = $questionAndAnswer[1];
     }
