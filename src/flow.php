@@ -3,6 +3,7 @@
 namespace BrainGames\Flow;
 
 use function cli\line;
+use function cli\prompt;
 
 function flow($gameRules, $questions, $correctAnswers)
 {
