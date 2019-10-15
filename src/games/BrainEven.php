@@ -21,7 +21,7 @@ function run()
     for ($i = 0; $i < 3; $i++) {
         $question = getQuestion();
         $questions[] = $question;
-        $correctAnswer[] = findCorrectAnswer($question);
+        $correctAnswers[] = findCorrectAnswer($question);
     }
     $gameRules = line('Answer "yes" if number even otherwise answer "no".');
     
