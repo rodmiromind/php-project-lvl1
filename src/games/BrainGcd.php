@@ -32,7 +32,6 @@ function run()
         $question = getQuestion();
         $questions[] = implode(' ', $question);
         $correctAnswers[] = findCorrectAnswer($question);
-        var_dump($correctAnswers);
     }
 
     $gameRules = line('Find the greatest common divisor of given numbers.');
