@@ -37,6 +37,6 @@ function run()
         $correctAnswers[] = $questionAndAnswer[1];
     }
 
-    $gameRules = line('What is the result of the expression?');
+    $gameRules = 'What is the result of the expression?';
     flow($gameRules, $questions, $correctAnswers);
 }

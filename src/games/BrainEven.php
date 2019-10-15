@@ -24,6 +24,6 @@ function run()
         $correctAnswers[] = findCorrectAnswer($question);
     }
     
-    $gameRules = line('Answer "yes" if number even otherwise answer "no".');
+    $gameRules = 'Answer "yes" if number even otherwise answer "no".';
     flow($gameRules, $questions, $correctAnswers);
 }

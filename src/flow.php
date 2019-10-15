@@ -8,7 +8,7 @@ use function cli\prompt;
 function flow($gameRules, $questions, $correctAnswers)
 {
     line('Welcome to the Brain Games!');
-    $gameRules;
+    line("{$gameRules}");
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s!", $name);
 

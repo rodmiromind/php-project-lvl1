@@ -34,6 +34,6 @@ function run()
         $correctAnswers[] = findCorrectAnswer($question);
     }
 
-    $gameRules = line('Find the greatest common divisor of given numbers.');
+    $gameRules = 'Find the greatest common divisor of given numbers.';
     flow($gameRules, $questions, $correctAnswers);
 }
