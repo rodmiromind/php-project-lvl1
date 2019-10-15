@@ -20,7 +20,7 @@ function run()
         if ($a % $min === 0 && $b % $min === 0) {
             return $min;
         }
-        for ($i = 2, $max = floor($min/2); $i <= $max; $i++) {
+        for ($i = 2, $max = floor($min / 2); $i <= $max; $i++) {
             if ($a % $i === 0 && $b % $i === 0 && $i > $gcd) {
                 $gcd = $i;
             }

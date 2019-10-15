@@ -26,7 +26,7 @@ function run()
             case '*':
                 $questionAndAnswer[] = $num1 * $num2;
                 break;
-            }
+        }
         
         return $questionAndAnswer;
     }
