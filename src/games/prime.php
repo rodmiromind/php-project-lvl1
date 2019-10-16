@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\BrainPrime;
+namespace BrainGames\Prime;
 
 use function BrainGames\Flow\flow;
 

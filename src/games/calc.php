@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\BrainCalc;
+namespace BrainGames\Calc;
 
 use function BrainGames\Flow\flow;
 

@@ -28,11 +28,11 @@
         "files": [
             "src/cli.php",
             "src/flow.php",
-            "src/games/BrainEven.php",
-            "src/games/BrainCalc.php",
-            "src/games/BrainGcd.php",
-            "src/games/BrainProgression.php",
-            "src/games/BrainPrime.php"
+            "src/games/even.php",
+            "src/games/calc.php",
+            "src/games/gcd.php",
+            "src/games/progression.php",
+            "src/games/prime.php"
         ]
     }
 }
