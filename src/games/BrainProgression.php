@@ -9,13 +9,13 @@ function run()
     function getQuestionAndAnswer()
     {
         $step = random_int(1, 10);
-        $firstitem = random_int(1, 10);
-        $lastitem = $firstitem + $step * 9;
-        $question = range($firstitem, $lastitem, $step);
+        $firstItem = random_int(1, 10);
+        $lastItem = $firstItem + $step * 9;
+        $question = range($firstItem, $lastItem, $step);
         $missedItemKey = random_int(0, 9);
-        $question[] = $question[$missedItemKey];
-        $question[$missedItemKey] = '..';
-        return $question;
+        $questionAndAnswer[] = $question[$missedItemKey];
+        $questionAndAnswer[$missedItemKey] = '..';
+        return $questionAndAnswer;
     }
 
     for ($i = 0; $i < 3; $i++) {

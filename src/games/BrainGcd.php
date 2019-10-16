@@ -6,16 +6,16 @@ use function BrainGames\Flow\flow;
 
 function run()
 {
-    function getQuestion()
+    function getNumbers()
     {
         return [random_int(1, 100), random_int(1, 100)];
     }
 
-    function getCorrectAnswer($question)
+    function getCorrectAnswer($numbersArray)
     {
-        $min = min($question);
+        $min = min($numbersArray);
         $gcd = 1;
-        [$a, $b] = $question;
+        [$a, $b] = $numbersArray;
         if ($a % $min === 0 && $b % $min === 0) {
             return $min;
         }
@@ -28,8 +28,8 @@ function run()
     }
 
     for ($i = 0; $i < 3; $i++) {
-        $question = getQuestion();
-        $questions[] = implode(' ', $question);
+        $questionArray = getNumbers();
+        $questions[] = implode(' ', $questionArray);
         $correctAnswers[] = getCorrectAnswer($question);
     }
 

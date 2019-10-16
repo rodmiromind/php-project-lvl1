@@ -7,18 +7,18 @@ use function BrainGames\Flow\flow;
 function run()
 {
 
-    function getQuestion()
+    function getNumber()
     {
         return random_int(1, 100);
     }
 
-    function getCorrectAnswer($question)
+    function getCorrectAnswer($number)
     {
-        return $question % 2 === 0 ? 'yes' : 'no';
+        return $number % 2 === 0 ? 'yes' : 'no';
     }
 
     for ($i = 0; $i < 3; $i++) {
-        $question = getQuestion();
+        $question = getNumber();
         $questions[] = $question;
         $correctAnswers[] = getCorrectAnswer($question);
     }
