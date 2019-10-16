@@ -15,3 +15,6 @@ Install and start video for step 6 (brain-gcd)
 
 Install and start video for step 7 (brain-progression)
 [![asciicast](https://asciinema.org/a/VOZn2Wtgt5tKM9Wgxqs9y7paY.png)](https://asciinema.org/a/VOZn2Wtgt5tKM9Wgxqs9y7paY)
+
+Install and start video for step 8 (brain-prime)
+[![asciicast](https://asciinema.org/a/7DpSO1Iq4IQPKssVB2rbMwRnt.png)](https://asciinema.org/a/7DpSO1Iq4IQPKssVB2rbMwRnt)
