@@ -17,7 +17,7 @@ function run()
         if ($num % 2 === 0) {
             return "no";
         }
-        for ($i = 3; $i <= floor($num/2); $i++) {
+        for ($i = 3; $i <= floor($num / 2); $i++) {
             if ($num % $i === 0) {
                 return "no";
             }
