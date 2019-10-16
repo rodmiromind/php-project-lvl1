@@ -2,7 +2,6 @@
 
 namespace BrainGames\BrainEven;
 
-use function cli\line;
 use function BrainGames\Flow\flow;
 
 function run()
@@ -13,7 +12,7 @@ function run()
         return random_int(1, 100);
     }
 
-    function findCorrectAnswer($question)
+    function getCorrectAnswer($question)
     {
         return $question % 2 === 0 ? 'yes' : 'no';
     }
@@ -21,7 +20,7 @@ function run()
     for ($i = 0; $i < 3; $i++) {
         $question = getQuestion();
         $questions[] = $question;
-        $correctAnswers[] = findCorrectAnswer($question);
+        $correctAnswers[] = getCorrectAnswer($question);
     }
     
     $gameRules = 'Answer "yes" if number even otherwise answer "no".';

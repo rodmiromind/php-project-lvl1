@@ -2,7 +2,6 @@
 
 namespace BrainGames\BrainGcd;
 
-use function cli\line;
 use function BrainGames\Flow\flow;
 
 function run()
@@ -12,7 +11,7 @@ function run()
         return [random_int(1, 100), random_int(1, 100)];
     }
 
-    function findCorrectAnswer($question)
+    function getCorrectAnswer($question)
     {
         $min = min($question);
         $gcd = 1;
@@ -31,7 +30,7 @@ function run()
     for ($i = 0; $i < 3; $i++) {
         $question = getQuestion();
         $questions[] = implode(' ', $question);
-        $correctAnswers[] = findCorrectAnswer($question);
+        $correctAnswers[] = getCorrectAnswer($question);
     }
 
     $gameRules = 'Find the greatest common divisor of given numbers.';

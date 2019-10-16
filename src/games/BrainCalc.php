@@ -2,13 +2,12 @@
 
 namespace BrainGames\BrainCalc;
 
-use function cli\line;
 use function BrainGames\Flow\flow;
 
 function run()
 {
 
-    function getQuestionsAndAnswers()
+    function getQuestionAndAnswer()
     {
         $num1 = random_int(1, 100);
         $num2 = random_int(1, 100);
@@ -32,7 +31,7 @@ function run()
     }
 
     for ($i = 0; $i < 3; $i++) {
-        $questionAndAnswer = getQuestionsAndAnswers();
+        $questionAndAnswer = getQuestionAndAnswer();
         $questions[] = $questionAndAnswer[0];
         $correctAnswers[] = $questionAndAnswer[1];
     }
