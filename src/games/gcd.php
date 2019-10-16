@@ -30,7 +30,7 @@ function run()
     for ($i = 0; $i < 3; $i++) {
         $questionArray = getNumbers();
         $questions[] = implode(' ', $questionArray);
-        $correctAnswers[] = getCorrectAnswer($question);
+        $correctAnswers[] = getCorrectAnswer($questionArray);
     }
 
     $gameRules = 'Find the greatest common divisor of given numbers.';

@@ -11,11 +11,15 @@ function run()
         $step = random_int(1, 10);
         $firstItem = random_int(1, 10);
         $lastItem = $firstItem + $step * 9;
-        $question = range($firstItem, $lastItem, $step);
+        $progressionArray = range($firstItem, $lastItem, $step);
         $missedItemKey = random_int(0, 9);
-        $questionAndAnswer[] = $question[$missedItemKey];
-        $questionAndAnswer[$missedItemKey] = '..';
-        return $questionAndAnswer;
+        $progressionArray[] = $progressionArray[$missedItemKey];
+
+        var_dump($progressionArray);
+        $progressionArray[$missedItemKey] = '..';
+
+        
+        return $progressionArray;
     }
 
     for ($i = 0; $i < 3; $i++) {
