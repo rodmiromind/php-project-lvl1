@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Gcd;
+namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Flow\flow;
 
