@@ -14,11 +14,7 @@ function run()
         $progressionArray = range($firstItem, $lastItem, $step);
         $missedItemKey = random_int(0, 9);
         $progressionArray[] = $progressionArray[$missedItemKey];
-
-        var_dump($progressionArray);
         $progressionArray[$missedItemKey] = '..';
-
-        
         return $progressionArray;
     }
 
