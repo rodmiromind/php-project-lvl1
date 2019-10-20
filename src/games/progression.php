@@ -5,6 +5,7 @@ namespace BrainGames\Games\Progression;
 use function BrainGames\Flow\flow;
 
 const GAMERULE = 'What number is missing in the progression?';
+const PROGRESSION_LENGTH = 10;
 
 function run()
 {
@@ -12,7 +13,7 @@ function run()
     {
         $step = random_int(1, 10);
         $firstItem = random_int(1, 10);
-        $lastItem = $firstItem + $step * 9;
+        $lastItem = $step + (PROGRESSION_LENGTH * $step - $step);
         $progression = range($firstItem, $lastItem, $step);
         $missedItemKey = random_int(0, 9);
         $answer = $progression[$missedItemKey];
