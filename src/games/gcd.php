@@ -4,6 +4,8 @@ namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Flow\flow;
 
+const GAMERULE = 'Find the greatest common divisor of given numbers.';
+
 function run()
 {
     function getNumbers()
@@ -27,12 +29,15 @@ function run()
         return $gcd;
     }
 
+    function getQuestionAndAnswer() {
+        $question = getNumbers();
+        $answer = getCorrectAnswer($question);
+        return [implode(' ', $question), $answer];
+    }
+    
     for ($i = 0; $i < 3; $i++) {
-        $questionArray = getNumbers();
-        $questions[] = implode(' ', $questionArray);
-        $correctAnswers[] = getCorrectAnswer($questionArray);
+        $questionAndAnswer[] = getQuestionAndAnswer();
     }
 
-    $gameRules = 'Find the greatest common divisor of given numbers.';
-    flow($gameRules, $questions, $correctAnswers);
+    flow(GAMERULE, $questionAndAnswer);
 }

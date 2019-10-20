@@ -4,18 +4,20 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Flow\flow;
 
+const GAMERULE = "What is the result of the expression?";
+const OPERATORS = ['-', '+', '*'];
+
 function run()
 {
-
     function getQuestionAndAnswer()
     {
+        
         $num1 = random_int(1, 100);
-        $num2 = random_int(1, 100);
-        $operators = ['-', '+', '*'];
-        shuffle($operators);
-        $questionAndAnswer[] = "{$num1}{$operators[0]}{$num2}";
+        $num2 = random_int(1, 100);        
+        $operator = OPERATORS[array_rand(OPERATORS)];
+        $questionAndAnswer[] = "{$num1}{$operator}{$num2}";
 
-        switch ($operators[0]) {
+        switch ($operator) {
             case '-':
                 $questionAndAnswer[] = $num1 - $num2;
                 break;
@@ -31,11 +33,8 @@ function run()
     }
 
     for ($i = 0; $i < 3; $i++) {
-        $questionAndAnswer = getQuestionAndAnswer();
-        $questions[] = $questionAndAnswer[0];
-        $correctAnswers[] = $questionAndAnswer[1];
+        $questionAndAnswer[] = getQuestionAndAnswer();
     }
-
-    $gameRules = 'What is the result of the expression?';
-    flow($gameRules, $questions, $correctAnswers);
+    
+    flow(GAMERULE, $questionAndAnswer);
 }

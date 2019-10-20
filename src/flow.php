@@ -5,21 +5,21 @@ namespace BrainGames\Flow;
 use function cli\line;
 use function cli\prompt;
 
-function flow($gameRules, $questions, $correctAnswers)
+function flow($gameRule, $questionAndAnswer)
 {
     line('Welcome to the Brain Games!');
-    line("{$gameRules}");
+    line("{$gameRule}");
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s!", $name);
 
     for ($i = 0; $i < 3; $i++) {
-        line("Question: {$questions[$i]}");
+        line("Question: {$questionAndAnswer[$i][0]}");
         $answer = \cli\prompt('Your answer');
 
-        if ($answer == $correctAnswers[$i]) {
+        if ($answer == $questionAndAnswer[$i][1]) {
             line("Correct!");
         } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswers[$i]}'.
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$questionAndAnswer[$i][1]}'.
             Let's try again, {$name}!");
             exit;
         }
