@@ -13,7 +13,7 @@ function run()
     {
         
         $num1 = random_int(1, 100);
-        $num2 = random_int(1, 100);        
+        $num2 = random_int(1, 100);
         $operator = OPERATORS[array_rand(OPERATORS)];
         $questionAndAnswer[] = "{$num1}{$operator}{$num2}";
 
@@ -35,6 +35,6 @@ function run()
     for ($i = 0; $i < 3; $i++) {
         $questionAndAnswer[] = getQuestionAndAnswer();
     }
-    
+
     flow(GAMERULE, $questionAndAnswer);
 }
