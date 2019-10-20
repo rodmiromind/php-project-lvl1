@@ -23,9 +23,9 @@ function run()
         return true;
     }
 
-    function getCorrectAnswer($number)
+    function getCorrectAnswer($num)
     {
-        return isPrime($number) ? 'yes' : 'no';
+        return isPrime($num) ? 'yes' : 'no';
     }
 
     function getQuestionAndAnswer()

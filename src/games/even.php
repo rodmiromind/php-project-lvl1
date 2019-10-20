@@ -9,7 +9,7 @@ const GAMERULE = 'Answer "yes" if number even otherwise answer "no".';
 function run()
 {
 
-    function getNumber()
+    function getQuestion()
     {
         return random_int(1, 100);
     }
@@ -26,7 +26,7 @@ function run()
 
     function getQuestionAndAnswer()
     {
-        $question = getNumber();
+        $question = getQuestion();
         $answer = getCorrectAnswer($question);
         return [$question, $answer];
     }
