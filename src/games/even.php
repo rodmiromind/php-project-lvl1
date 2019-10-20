@@ -24,7 +24,8 @@ function run()
         return isEven($number) ? 'yes' : 'no';
     }
 
-    function getQuestionAndAnswer() {
+    function getQuestionAndAnswer()
+    {
         $question = getNumber();
         $answer = getCorrectAnswer($question);
         return [$question, $answer];

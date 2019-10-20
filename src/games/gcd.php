@@ -29,12 +29,13 @@ function run()
         return $gcd;
     }
 
-    function getQuestionAndAnswer() {
+    function getQuestionAndAnswer()
+    {
         $question = getNumbers();
         $answer = getCorrectAnswer($question);
         return [implode(' ', $question), $answer];
     }
-    
+
     for ($i = 0; $i < 3; $i++) {
         $questionAndAnswer[] = getQuestionAndAnswer();
     }

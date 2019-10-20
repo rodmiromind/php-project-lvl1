@@ -28,7 +28,8 @@ function run()
         return isPrime($number) ? 'yes' : 'no';
     }
 
-    function getQuestionAndAnswer() {
+    function getQuestionAndAnswer()
+    {
         $question = random_int(2, 100);
         $answer = getCorrectAnswer($question);
         return [$question, $answer];
