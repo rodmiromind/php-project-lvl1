@@ -13,7 +13,7 @@ function run()
     {
         $step = random_int(1, 10);
         $firstItem = random_int(1, 10);
-        $lastItem = $step + (PROGRESSION_LENGTH * $step - $step);
+        $lastItem = $firstItem + (PROGRESSION_LENGTH * $step - $step);
         $progression = range($firstItem, $lastItem, $step);
         $missedItemKey = random_int(0, 9);
         $answer = $progression[$missedItemKey];
