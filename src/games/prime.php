@@ -19,7 +19,6 @@ function run()
                 return false;
             }
         }
-
         return true;
     }
 
