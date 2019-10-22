@@ -4,36 +4,28 @@ namespace BrainGames\Games\Even;
 
 use function BrainGames\Flow\flow;
 
-const GAMERULE = 'Answer "yes" if number even otherwise answer "no".';
+const GAME_DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
+const NUMBERS_OF_ROUNDS = 3;
+const MIN_NUMBER = 1;
+const MAX_NUMBER = 100;
+
+function isEven($number)
+{
+    return $number % 2 === 0;
+}
+
+function getQuestionAndAnswer()
+{
+    $question = random_int(MIN_NUMBER, MAX_NUMBER);
+    $answer = isEven($question) ? 'yes' : 'no';
+    return [$question, $answer];
+}
 
 function run()
 {
-
-    function getQuestion()
-    {
-        return random_int(1, 100);
-    }
-
-    function isEven($number)
-    {
-        return $number % 2 === 0;
-    }
-
-    function getCorrectAnswer($number)
-    {
-        return isEven($number) ? 'yes' : 'no';
-    }
-
-    function getQuestionAndAnswer()
-    {
-        $question = getQuestion();
-        $answer = getCorrectAnswer($question);
-        return [$question, $answer];
-    }
-
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < NUMBERS_OF_ROUNDS; $i++) {
         $questionAndAnswer[] = getQuestionAndAnswer();
     }
-        
-    flow(GAMERULE, $questionAndAnswer);
+
+    flow(GAME_DESCRIPTION, $questionAndAnswer);
 }

@@ -4,39 +4,36 @@ namespace BrainGames\Games\Prime;
 
 use function BrainGames\Flow\flow;
 
-const GAMERULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const NUMBERS_OF_ROUNDS = 3;
+const MIN_NUMBER = 1;
+const MAX_NUMBER = 100;
+
+function isPrime($num)
+{
+    if ($num < 2) {
+        return false;
+    }
+    for ($i = 2; $i <= floor($num / 2); $i++) {
+        if ($num % $i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function getQuestionAndAnswer()
+{
+    $question = random_int(MIN_NUMBER, MAX_NUMBER);
+    $answer = isPrime($question) ? 'yes' : 'no';
+    return [$question, $answer];
+}
 
 function run()
 {
-
-    function isPrime($num)
-    {
-        if ($num % 2 === 0) {
-            return false;
-        }
-        for ($i = 3; $i <= floor($num / 2); $i++) {
-            if ($num % $i === 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    function getCorrectAnswer($num)
-    {
-        return isPrime($num) ? 'yes' : 'no';
-    }
-
-    function getQuestionAndAnswer()
-    {
-        $question = random_int(2, 100);
-        $answer = getCorrectAnswer($question);
-        return [$question, $answer];
-    }
-
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < NUMBERS_OF_ROUNDS; $i++) {
         $questionAndAnswer[] = getQuestionAndAnswer();
     }
         
-    flow(GAMERULE, $questionAndAnswer);
+    flow(GAME_DESCRIPTION, $questionAndAnswer);
 }
