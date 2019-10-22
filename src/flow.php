@@ -4,6 +4,7 @@ namespace BrainGames\Flow;
 
 use function cli\line;
 use function cli\prompt;
+
 const NUMBERS_OF_ROUNDS = 3;
 
 function flow($gameRule, $questionAndAnswer)
