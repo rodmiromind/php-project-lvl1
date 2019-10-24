@@ -1,12 +1,12 @@
 <?php
 
-namespace BrainGames\Games\Calc;
+namespace BrainGames\games\calc;
 
-use function BrainGames\Flow\flow;
+use function BrainGames\flow\flow;
+use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = "What is the result of the expression?";
 const OPERATORS = ['-', '+', '*'];
-const NUMBERS_OF_ROUNDS = 3;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 100;
 

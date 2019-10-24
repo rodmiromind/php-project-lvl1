@@ -1,11 +1,11 @@
 <?php
 
-namespace BrainGames\Games\Prime;
+namespace BrainGames\games\prime;
 
-use function BrainGames\Flow\flow;
+use function BrainGames\flow\flow;
+use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const NUMBERS_OF_ROUNDS = 3;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 100;
 

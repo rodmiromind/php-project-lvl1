@@ -1,18 +1,18 @@
 <?php
 
-namespace BrainGames\Games\Gcd;
+namespace BrainGames\games\gcd;
 
-use function BrainGames\Flow\flow;
+use function BrainGames\flow\flow;
+use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.';
-const NUMBERS_OF_ROUNDS = 3;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 100;
 
 function getGcd($num1, $num2)
 {
     $min = min([$num1, $num2]);
-    $gcd = MIN_NUMBER;
+    $gcd = 1;
     if ($num1 % $min === 0 && $num2 % $min === 0) {
         return $min;
     }
@@ -26,9 +26,11 @@ function getGcd($num1, $num2)
 
 function getQuestionAndAnswer()
 {
-    $question = [random_int(MIN_NUMBER, MAX_NUMBER), random_int(MIN_NUMBER, MAX_NUMBER)];
-    $answer = getGcd($question[0], $question[1]);
-    return [implode(' ', $question), $answer];
+    $num1 = random_int(MIN_NUMBER, MAX_NUMBER);
+    $num2 = random_int(MIN_NUMBER, MAX_NUMBER);
+    $question = "$num1 $num2";
+    $answer = getGcd($num1, $num2);
+    return [$question, $answer];
 }
 
 function run()

@@ -1,12 +1,12 @@
 <?php
 
-namespace BrainGames\Games\Progression;
+namespace BrainGames\games\progression;
 
-use function BrainGames\Flow\flow;
+use function BrainGames\flow\flow;
+use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = 'What number is missing in the progression?';
 const PROGRESSION_LENGTH = 10;
-const NUMBERS_OF_ROUNDS = 3;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 10;
 
@@ -14,7 +14,7 @@ function getQuestionAndAnswer()
 {
     $step = random_int(MIN_NUMBER, MAX_NUMBER);
     $firstItem = random_int(MIN_NUMBER, MAX_NUMBER);
-    $lastItem = $firstItem + (PROGRESSION_LENGTH * $step - $step);
+    $lastItem = $firstItem + ((PROGRESSION_LENGTH - 1) * $step);
     $progression = range($firstItem, $lastItem, $step);
     $missedItemKey = random_int(0, PROGRESSION_LENGTH - 1);
     $answer = $progression[$missedItemKey];

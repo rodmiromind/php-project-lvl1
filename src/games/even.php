@@ -1,11 +1,11 @@
 <?php
 
-namespace BrainGames\Games\Even;
+namespace BrainGames\games\even;
 
-use function BrainGames\Flow\flow;
+use function BrainGames\flow\flow;
+use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
-const NUMBERS_OF_ROUNDS = 3;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 100;
 
