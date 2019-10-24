@@ -3,6 +3,7 @@
 namespace BrainGames\games\even;
 
 use function BrainGames\flow\flow;
+
 use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';

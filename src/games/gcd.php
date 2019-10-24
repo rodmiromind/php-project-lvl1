@@ -3,6 +3,7 @@
 namespace BrainGames\games\gcd;
 
 use function BrainGames\flow\flow;
+
 use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.';

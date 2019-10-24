@@ -3,6 +3,7 @@
 namespace BrainGames\games\calc;
 
 use function BrainGames\flow\flow;
+
 use const BrainGames\flow\NUMBERS_OF_ROUNDS;
 
 const GAME_DESCRIPTION = "What is the result of the expression?";
