@@ -4,7 +4,7 @@ namespace BrainGames\games\calc;
 
 use function BrainGames\flow\flow;
 
-use const BrainGames\flow\NUMBERS_OF_ROUNDS;
+use const BrainGames\flow\ROUNDS_COUNT;
 
 const GAME_DESCRIPTION = "What is the result of the expression?";
 const OPERATORS = ['-', '+', '*'];
@@ -36,7 +36,7 @@ function getQuestionAndAnswer()
 
 function run()
 {
-    for ($i = 0; $i < NUMBERS_OF_ROUNDS; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $questionAndAnswer[] = getQuestionAndAnswer();
     }
 

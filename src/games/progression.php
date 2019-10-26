@@ -4,9 +4,9 @@ namespace BrainGames\games\progression;
 
 use function BrainGames\flow\flow;
 
-use const BrainGames\flow\NUMBERS_OF_ROUNDS;
+use const BrainGames\flow\ROUNDS_COUNT;
 
-const GAME_DESCRIPTION = 'What number is missing in the progression?';
+const GAME_DESCRIPTION = "What number is missing in the progression?";
 const PROGRESSION_LENGTH = 10;
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 10;
@@ -25,7 +25,7 @@ function getQuestionAndAnswer()
 
 function run()
 {
-    for ($i = 0; $i < NUMBERS_OF_ROUNDS; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $questionAndAnswer[] = getQuestionAndAnswer();
     }
     
