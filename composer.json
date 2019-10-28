@@ -1,6 +1,6 @@
 {
     "name": "piston/php-project-lvl1",
-    "type": "library",
+    "type": "project",
     "authors": [
         {
             "name": "notebook",
