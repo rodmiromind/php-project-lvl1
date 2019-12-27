@@ -1,10 +1,14 @@
 # php-project-lvl1
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/57da1439fc983a010e7d/maintainability)](https://codeclimate.com/github/trencher/php-project-lvl1/maintainability) [![Build Status](https://travis-ci.org/trencher/php-project-lvl1.svg?branch=master)](https://travis-ci.org/trencher/php-project-lvl1)
+
+Simple and useless CLI game.
+It was an educational project. 
+
 ## Installation:
 ``` composer global require piston/php-project-lvl1```
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/57da1439fc983a010e7d/maintainability)](https://codeclimate.com/github/trencher/php-project-lvl1/maintainability) [![Build Status](https://travis-ci.org/trencher/php-project-lvl1.svg?branch=master)](https://travis-ci.org/trencher/php-project-lvl1)
-
+## Some game videos:
 Install and start video for step 2
 [![asciicast](https://asciinema.org/a/IyKA5v9Lun4EdaTZ4kk0l4Ged.png)](https://asciinema.org/a/IyKA5v9Lun4EdaTZ4kk0l4Ged)
 
