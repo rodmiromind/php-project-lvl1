@@ -1,4 +1,8 @@
 # php-project-lvl1
+
+## Installation:
+``` composer global require piston/php-project-lvl1```
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/57da1439fc983a010e7d/maintainability)](https://codeclimate.com/github/trencher/php-project-lvl1/maintainability) [![Build Status](https://travis-ci.org/trencher/php-project-lvl1.svg?branch=master)](https://travis-ci.org/trencher/php-project-lvl1)
 
 Install and start video for step 2
